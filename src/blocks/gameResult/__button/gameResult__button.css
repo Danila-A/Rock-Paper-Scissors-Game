@@ -1,0 +1,17 @@
+.gameResult__button {
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--text_color);
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    transition: color 0.1s ease-in;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.gameResult__button:hover {
+    color: var(--rock);
+}

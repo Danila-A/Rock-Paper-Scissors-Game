@@ -1,0 +1,4 @@
+.score {
+    background-color: var(--text_color);
+    border-radius: 10px;
+}

@@ -3,11 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Your title name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Rock Paper Scissors</title>
 </head>
-<body>
-    <main></main>
-    <script src=""></script>
+<body class="body">
+
+    <header class="header">
+        <div class="header__inner">
+
+            <div class="header__conteiner">
+                <div class="header__title">
+                    <img src="img/logo.svg" alt="logo">
+                </div>
+                <div class="header__score score">
+                    <div class="score__inner">
+                        <div class="score__title">score</div>
+                        <div class="score__score">0</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__inner">
+            <div class="main__triangle"><img src="img/bg-triangle.svg" alt="triangle"></div>
+
+            <div class="item">
+                <div class="item__inner">
+                    <div class="item__text">you picked</div>
+                    <div class="item__cirle1"></div>
+                    <div class="item__cirle2"></div>
+                    <div class="item__cirle3"></div>
+                    <div class="item__img"><img src="img/icon-paper.svg" alt="paper"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__inner">
+                    <div class="item__text">you picked</div>
+                    <div class="item__cirle1"></div>
+                    <div class="item__cirle2"></div>
+                    <div class="item__cirle3"></div>
+                    <div class="item__img"><img src="img/icon-scissors.svg" alt="scissors"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__inner">
+                    <div class="item__text">you picked</div>
+                    <div class="item__cirle1"></div>
+                    <div class="item__cirle2"></div>
+                    <div class="item__cirle3"></div>
+                    <div class="item__img"><img src="img/icon-rock.svg" alt="rock"></div>
+                </div>
+            </div>
+
+            <div class="item houseItem">
+                <div class="houseItem__darkCircle"></div>
+                <div class="item__inner">
+                    <div class="item__text">house picked</div>
+                    <div class="item__cirle1"></div>
+                    <div class="item__cirle2"></div>
+                    <div class="item__cirle3"></div>
+                    <div class="item__img"><img src="img/icon-paper.svg" alt="paper"></div>
+                </div>
+            </div>
+            
+            <div class="gameResult">
+                <div class="gameResult__text">you win</div>
+                <div class="gameResult__buttonContainer"><button class="gameResult__button">play again</button></div>
+            </div>
+        </div>
+    </main>
+
+    <button class="button">rules</button>
+
+    <dialog class="rules">
+        <div class="rules_inner">
+            <div class="rules__header">
+                <div class="rules__title">rules</div>
+                <div class="rules__icon"><img src="img/" alt="" class="closeIcon"></div>
+            </div>
+            <div class="rules__rules"><img src="img/" alt=""></div>
+        </div>
+    </dialog>
+
+    <script src="js/main.min.js"></script>
 </body>
 </html>

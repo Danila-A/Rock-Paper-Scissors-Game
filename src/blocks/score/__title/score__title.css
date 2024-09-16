@@ -1,0 +1,7 @@
+.score__title {
+    color: var(--score_text);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}

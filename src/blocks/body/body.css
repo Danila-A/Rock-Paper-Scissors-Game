@@ -1,0 +1,92 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:root {
+    --cissors: #ed9f0d;
+    --paper: #4764f5;
+    --rock: #dc2e4e;
+
+    --text_color: #ffffff;
+    --dark_text: #3b4363;
+    --score_text: #2944bf;
+    --header_outline: #616f85;
+
+    --background_gradient: linear-gradient(#1f3756,  #141638);
+
+    --big_text: 65px;
+    --item_text: 25px;
+    --score_and_buttons_text: 20px;
+}
+.body {
+    background-image: var(--background_gradient);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: var(--text_color);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    position: relative;
+    font-size: var(--score_and_buttons_text);
+    display: grid;
+    grid-template-columns: auto 960px auto;
+    /* grid-template-rows: 15% auto; */
+    grid-template-areas: 
+        '. header .'
+        '. main .'
+    ;
+}
+@media screen and (max-width: 1024px) {
+    .body {
+        grid-template-columns: auto 512px auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .body {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            'header'
+            'main'
+        ;
+    }
+    
+}

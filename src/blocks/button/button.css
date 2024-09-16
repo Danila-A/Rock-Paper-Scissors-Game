@@ -1,0 +1,23 @@
+.button {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    /* font-size: var(--score_and_buttons_text); */
+    background: none;
+    color: var(--text_color);
+    border: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 2px solid var(--text_color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 35px;
+    padding-left: 35px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+.button:hover {
+    background-color: var(--text_color);
+    color: black;
+}
