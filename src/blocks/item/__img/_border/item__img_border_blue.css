@@ -1,0 +1,8 @@
+.item__img_border_blue {
+    outline: 20px solid var(--paper);
+}
+@media screen and (max-width: 600px) {
+    .item__img_border_blue {
+        outline: 15px solid var(--paper);
+    }   
+}

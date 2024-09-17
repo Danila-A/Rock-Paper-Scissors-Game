@@ -1,0 +1,8 @@
+.paper {
+    left: 30%;
+}
+@media screen and (max-width: 1024px) {
+    .paper {
+        left: 12%;
+    }
+}

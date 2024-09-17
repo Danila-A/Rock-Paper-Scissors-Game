@@ -1,0 +1,19 @@
+.main__triangle {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+@media screen and (max-width: 1024px) {
+    .main__triangle {
+        top: 15%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main__triangle {
+        top: 25%;
+    }
+    .main__triangle img {
+        width: 100%;
+    }   
+}

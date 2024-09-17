@@ -1,0 +1,10 @@
+.rock {
+    left: 50%;
+    top: 32%;
+    transform: translateX(-50%);
+}
+@media screen and (max-width: 1024px) {
+    .rock {
+        top: 25%;
+    }
+}

@@ -1,0 +1,8 @@
+@media screen and (max-width: 512px) {
+    .header__title {
+        width: 45%;
+    }
+    .header__title img {
+        width: 100%;
+    }
+}

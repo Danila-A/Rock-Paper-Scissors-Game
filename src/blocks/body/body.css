@@ -54,7 +54,7 @@ table {
 
     --background_gradient: linear-gradient(#1f3756,  #141638);
 
-    --big_text: 65px;
+    --big_text: clamp(40px, 6.25vw, 65px);
     --item_text: 25px;
     --score_and_buttons_text: 20px;
 }
@@ -69,7 +69,7 @@ table {
     font-size: var(--score_and_buttons_text);
     display: grid;
     grid-template-columns: auto 960px auto;
-    /* grid-template-rows: 15% auto; */
+    grid-template-rows: 25% auto;
     grid-template-areas: 
         '. header .'
         '. main .'
@@ -87,6 +87,5 @@ table {
             'header'
             'main'
         ;
-    }
-    
+    }   
 }

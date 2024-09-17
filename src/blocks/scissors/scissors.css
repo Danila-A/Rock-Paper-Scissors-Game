@@ -1,0 +1,8 @@
+.scissors {
+    right: 30%;
+}
+@media screen and (max-width: 1024px) {
+    .scissors {
+        right: 12%;
+    }
+}

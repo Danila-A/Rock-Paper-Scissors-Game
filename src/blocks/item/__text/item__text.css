@@ -1,0 +1,6 @@
+.item__text {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    opacity: 0;
+}

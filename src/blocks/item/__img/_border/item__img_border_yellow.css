@@ -1,0 +1,8 @@
+.item__img_border_yellow {
+    outline: 20px solid var(--cissors);
+}
+@media screen and (max-width: 600px) {
+    .item__img_border_yellow {
+        outline: 15px solid var(--cissors);
+    }   
+}

@@ -1,0 +1,8 @@
+.circle {
+    position: absolute;
+    inset: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    z-index: -1;
+}

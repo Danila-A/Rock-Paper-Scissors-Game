@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
@@ -33,46 +34,54 @@
         <div class="main__inner">
             <div class="main__triangle"><img src="img/bg-triangle.svg" alt="triangle"></div>
 
-            <div class="item">
+            <div class="item paper">
                 <div class="item__inner">
                     <div class="item__text">you picked</div>
-                    <div class="item__cirle1"></div>
-                    <div class="item__cirle2"></div>
-                    <div class="item__cirle3"></div>
-                    <div class="item__img"><img src="img/icon-paper.svg" alt="paper"></div>
+                    <div class="item__img item__img_border_blue">
+                        <img src="img/icon-paper.svg" alt="paper">
+                        <div class="item__cirle1 circle"></div>
+                        <div class="item__cirle2 circle"></div>
+                        <div class="item__cirle3 circle"></div>
+                    </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="item scissors">
                 <div class="item__inner">
                     <div class="item__text">you picked</div>
-                    <div class="item__cirle1"></div>
-                    <div class="item__cirle2"></div>
-                    <div class="item__cirle3"></div>
-                    <div class="item__img"><img src="img/icon-scissors.svg" alt="scissors"></div>
+                    <div class="item__img item__img_border_yellow">
+                        <img src="img/icon-scissors.svg" alt="scissors">
+                        <div class="item__cirle1 circle"></div>
+                        <div class="item__cirle2 circle"></div>
+                        <div class="item__cirle3 circle"></div>
+                    </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="item rock">
                 <div class="item__inner">
                     <div class="item__text">you picked</div>
-                    <div class="item__cirle1"></div>
-                    <div class="item__cirle2"></div>
-                    <div class="item__cirle3"></div>
-                    <div class="item__img"><img src="img/icon-rock.svg" alt="rock"></div>
+                    <div class="item__img item__img_border_red">
+                        <img src="img/icon-rock.svg" alt="rock">
+                        <div class="item__cirle1 circle"></div>
+                        <div class="item__cirle2 circle"></div>
+                        <div class="item__cirle3 circle"></div>
+                    </div>
                 </div>
             </div>
 
-            <div class="item houseItem">
+            <div class="item houseItem houseItem_opacity_zero">
                 <div class="houseItem__darkCircle"></div>
                 <div class="item__inner">
                     <div class="item__text">house picked</div>
-                    <div class="item__cirle1"></div>
-                    <div class="item__cirle2"></div>
-                    <div class="item__cirle3"></div>
-                    <div class="item__img"><img src="img/icon-paper.svg" alt="paper"></div>
+                    <div class="item__img item__img_border_yellow">
+                        <img src="img/icon-paper.svg" alt="paper">
+                        <div class="item__cirle1 circle"></div>
+                        <div class="item__cirle2 circle"></div>
+                        <div class="item__cirle3 circle"></div>
+                    </div>
                 </div>
             </div>
             
-            <div class="gameResult">
+            <div class="gameResult gameResult_display_none">
                 <div class="gameResult__text">you win</div>
                 <div class="gameResult__buttonContainer"><button class="gameResult__button">play again</button></div>
             </div>

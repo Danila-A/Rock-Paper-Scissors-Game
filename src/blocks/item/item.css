@@ -1,0 +1,5 @@
+.item {
+    position: absolute;
+    display: inline-block;
+    /* outline: 1px solid red; */
+}
