@@ -1,0 +1,17 @@
+.darkCircle {
+    right: 30%;
+    z-index: -1;
+}
+.darkCircle .item__img {
+    box-shadow: none;
+    background-color: var(--dark_circle);
+}
+.darkCircle .item__img::after {
+    content:'';
+    box-shadow: none;
+}
+@media screen and (max-width: 1024px) {
+    .darkCircle {
+        right: 12%;
+    }
+}

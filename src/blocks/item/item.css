@@ -1,5 +1,5 @@
 .item {
     position: absolute;
     display: inline-block;
-    /* outline: 1px solid red; */
+    /* transition: all 2s ease; */
 }

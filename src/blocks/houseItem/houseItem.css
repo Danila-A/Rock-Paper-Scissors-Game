@@ -1,4 +1,5 @@
 .houseItem {
     right: 30%;
     z-index: -1;
+    transition: all 1.5s ease;
 }
