@@ -1,0 +1,25 @@
+.rules_inner {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        'title icon'
+        'img img'
+    ;
+}
+@media screen and (max-width: 720px) {
+    .rules_inner {
+        padding:0;
+        padding-right: 30px;
+        padding-left: 30px;
+        height: 100%;
+
+        grid-template-columns: 100%;
+        grid-template-rows: 30% auto 20%;
+        grid-template-areas: 
+            'title'
+            'img'
+            'icon'
+        ;
+    }   
+}

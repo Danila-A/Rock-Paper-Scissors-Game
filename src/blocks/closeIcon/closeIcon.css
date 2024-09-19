@@ -1,0 +1,6 @@
+.closeIcon {
+    cursor: pointer;
+}
+.closeIcon:hover path {
+    fill: black;
+}

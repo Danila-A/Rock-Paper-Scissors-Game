@@ -21,3 +21,9 @@
     background-color: var(--text_color);
     color: black;
 }
+@media screen and (max-width: 720px) {
+    .button {
+        right: 50%;
+        transform: translateX(50%);
+    }   
+}

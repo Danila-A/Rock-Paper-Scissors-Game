@@ -1,0 +1,12 @@
+.rules__rules {
+    grid-area: img;
+    padding-top: 35px;
+    display: grid;
+}
+@media screen and (max-width: 720px) {
+    .rules__rules {
+        justify-content: center;
+        align-content: start;
+        padding-top: 0;
+    }   
+}

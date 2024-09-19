@@ -6,12 +6,12 @@
 }
 @media screen and (max-width: 1024px) {
     .main__triangle {
-        top: 15%;
+        top: 20%;
     }
 }
 @media screen and (max-width: 600px) {
     .main__triangle {
-        top: 25%;
+        top: 20%;
     }
     .main__triangle img {
         width: 100%;

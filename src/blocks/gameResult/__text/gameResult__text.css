@@ -2,4 +2,5 @@
     font-size: var(--big_text);
     font-weight: 600;
     text-transform: uppercase;
+    text-align: center;
 }

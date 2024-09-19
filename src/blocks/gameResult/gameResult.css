@@ -1,3 +1,15 @@
 .gameResult {
     display: inline-block;
+    transition: all 1s ease;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    display: none;
+}
+@media screen and (max-width: 720px) {
+    .gameResult {
+        top: auto;
+        bottom: 25%;
+    }   
 }

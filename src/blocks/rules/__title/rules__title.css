@@ -1,0 +1,13 @@
+.rules__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    grid-area: title;
+    display: grid;
+}
+@media screen and (max-width: 720px) {
+    .rules__title {
+        justify-content: center;
+        align-content: center;
+    }   
+}

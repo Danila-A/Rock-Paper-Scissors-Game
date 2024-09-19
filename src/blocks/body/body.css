@@ -46,7 +46,7 @@ table {
     --cissors: #ed9f0d;
     --paper: #4764f5;
     --rock: #dc2e4e;
-    --dark_circle: #0000002c;
+    --dark_circle: #9998982c;
     --text_color: #ffffff;
     --dark_text: #3b4363;
     --score_text: #2944bf;
@@ -77,10 +77,10 @@ table {
 }
 @media screen and (max-width: 1024px) {
     .body {
-        grid-template-columns: auto 512px auto;
+        grid-template-columns: auto 712px auto;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
     .body {
         grid-template-columns: 100%;
         grid-template-areas: 

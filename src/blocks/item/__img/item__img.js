@@ -10,6 +10,9 @@ function setUpAnimation() {
             startGame(e.target);
         });
     }
+    addRestartEvent();
+    gameField = document.querySelector('.main');
+    copiedGameField = gameField.cloneNode(true);
 }
 
 const opacityAnimation = [
@@ -24,27 +27,52 @@ const opacityAnimationSettings = {
     }
 };
 
-const itemTransformAnimation = [
-    {
-        transform: 'translateX(0%)',
-        right: '30%', 
-        left: 'auto',
-        top: '0',
-    }
-];
+const itemTransformAnimation = {
+    fullScreen: [
+                    {
+                        transform: 'translateX(0%)',
+                        right: '30%', 
+                        left: 'auto',
+                        top: '0',
+                    }
+                ],
+    tablet:  [
+                {
+                    transform: 'translateX(0%)',
+                    right: '12%', 
+                    left: 'auto',
+                    top: '0',
+                }
+            ],
+};
 
-const targetItemAnimation = [
-    {
-        transform: 'translateX(0%)',
-        right: 'auto', 
-        left: '30%',
-        top: '0',
-    }
-];
+const targetItemAnimation = {
+    fullScreen: [
+                    {
+                        transform: 'translateX(0%)',
+                        right: 'auto', 
+                        left: '30%',
+                        top: '0',
+                    }
+                ],
+    tablet: [
+                {
+                    transform: 'translateX(0%)',
+                    right: 'auto', 
+                    left: '12%',
+                    top: '0',
+                }
+            ],
+};
 
-const placeDownAnimation = [
-    {top: '20%'}
-];
+const placeDownAnimation = {
+    fullScreen: [
+                    {top: '20%'}
+                ],
+    mobileScreen: [
+                        {top: '10%'}
+                    ],             
+};
 
 
 
@@ -56,22 +84,42 @@ function prepareGamePlace(item) {
     const triangle = document.querySelector('.main__triangle');
     const darkCircle = document.querySelector('.darkCircle');
 
+    const targetItemTitle = targetItem.childNodes[0].childNodes[0];
+    const houseItemTitle = houseItem.childNodes[0].childNodes[0];
+    targetItemTitle.style.opacity = 1;
+    houseItemTitle.style.opacity = 1;
+
     removeItem(itemsArray, targetItem);
     removeItem(itemsArray, darkCircle);
     removeItem(itemsArray, houseItem);
 
-
-    makeAnimation(targetItem, targetItemAnimation, opacityAnimationSettings.circle);
+    if(window.innerWidth <= 1024) {
+        makeAnimation(targetItem, targetItemAnimation.tablet, opacityAnimationSettings.circle);    
+    }
+    else {
+        makeAnimation(targetItem, targetItemAnimation.fullScreen, opacityAnimationSettings.circle);
+    }
+    
     makeAnimation(triangle, opacityAnimation, opacityAnimationSettings.circle);
+
+    
 
     for (let singleItem of itemsArray) {
         makeAnimation(singleItem, opacityAnimation, opacityAnimationSettings.circle);
 
     }
 
-    makeAnimation(targetItem, placeDownAnimation, opacityAnimationSettings.circle);
-    makeAnimation(houseItem, placeDownAnimation, opacityAnimationSettings.circle);
-    makeAnimation(darkCircle, placeDownAnimation, opacityAnimationSettings.circle);
+    if(window.innerWidth <= 720) {
+        makeAnimation(targetItem, placeDownAnimation.mobileScreen, opacityAnimationSettings.circle);
+        makeAnimation(houseItem, placeDownAnimation.mobileScreen, opacityAnimationSettings.circle);
+        makeAnimation(darkCircle, placeDownAnimation.mobileScreen, opacityAnimationSettings.circle);        
+    }
+    else {
+        makeAnimation(targetItem, placeDownAnimation.fullScreen, opacityAnimationSettings.circle);
+        makeAnimation(houseItem, placeDownAnimation.fullScreen, opacityAnimationSettings.circle);
+        makeAnimation(darkCircle, placeDownAnimation.fullScreen, opacityAnimationSettings.circle);
+    }
+    
 }
 
 async function makeAnimation(target, animation, settings) {

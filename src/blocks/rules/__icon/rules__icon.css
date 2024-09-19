@@ -1,0 +1,12 @@
+.rules__icon {
+    grid-area: icon;
+    display: grid;
+    justify-content: end;
+    align-items: center;
+}
+@media screen and (max-width: 720px) {
+    .rules__icon {
+        justify-content: center;
+        align-content: center;
+    }   
+}
